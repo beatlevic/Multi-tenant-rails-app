@@ -1,0 +1,23 @@
+<h1>Listing movies for <%= @schema %></h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+  </tr>
+
+<% @movies.each do |movie| %>
+  <tr>
+    <td><%=h movie.title %></td>
+    <td><%= link_to 'Show', movie %></td>
+    <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
+    <td><%= link_to 'Destroy', movie, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New movie', new_movie_path %>
+<%= link_to 'GEE movies', movies_path(:schema => "gee") %>
+<%= link_to 'All movies', movies_path(:schema => "public") %>
+<%= link_to 'Martial heroes movies', movies_path(:schema => "martial_heroes") %>
