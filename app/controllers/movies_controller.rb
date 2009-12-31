@@ -1,4 +1,5 @@
 class MoviesController < ApplicationController
+  before_filter :create_schemas
   before_filter :set_schema
   # GET /movies
   # GET /movies.xml
@@ -8,6 +9,13 @@ class MoviesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @movies }
+    end
+  end
+
+  def create_schemas
+    if params[:go_schemas]
+      SchemaUtils.create_schema('gee')
+      SchemaUtils.create_schema('martial_heroes')
     end
   end
 

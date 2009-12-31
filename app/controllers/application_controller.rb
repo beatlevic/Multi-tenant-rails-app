@@ -10,6 +10,18 @@ module SchemaUtils
   def self.create_schema(schema)
     conn = ActiveRecord::Base.connection
     conn.execute("CREATE SCHEMA #{schema}")
+    self.migrate_schema(schema)
+  end
+
+  def self.migrate_schema(schema)
+    env = "#{RAILS_ENV}"
+    config = YAML::load(File.open('config/database.yml'))
+    config[env]["schema_search_path"] = schema
+    ActiveRecord::Base.establish_connection(config[env])
+    ActiveRecord::Migrator.migrate('db/migrate', ENV["VERSION"] ? ENV["VERSION"].to_i : nil)
+    # reset to public
+    config[env]["schema_search_path"] = "public"
+    ActiveRecord::Base.establish_connection(config[env])
   end
 end
 
