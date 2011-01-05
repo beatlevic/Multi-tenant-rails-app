@@ -2857,3 +2857,182 @@ Processing MoviesController#index (for 127.0.0.1 at 2009-12-31 16:25:29) [GET]
 Rendering template within layouts/movies
 Rendering movies/index
 Completed in 29ms (View: 5, DB: 3) | 200 OK [http://localhost/movies?schema=martial_heroes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:22:25) [GET]
+  Parameters: {"schema"=>"public"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public, public[0m
+  [4;36;1mMovie Load (1.6ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 154ms (View: 92, DB: 2) | 200 OK [http://localhost/movies?schema=public]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:22:28) [GET]
+  Parameters: {"schema"=>"public"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public, public[0m
+  [4;35;1mMovie Load (1.7ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 26ms (View: 5, DB: 2) | 200 OK [http://localhost/movies?schema=public]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:22:28) [GET]
+  Parameters: {"schema"=>"martial_heroes"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO martial_heroes, public[0m
+  [4;36;1mMovie Load (1.6ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 25ms (View: 5, DB: 3) | 200 OK [http://localhost/movies?schema=martial_heroes]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:22:30) [GET]
+  Parameters: {"schema"=>"gee"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO gee, public[0m
+  [4;35;1mMovie Load (2.0ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 39ms (View: 17, DB: 3) | 200 OK [http://localhost/movies?schema=gee]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:22:32) [GET]
+  Parameters: {"schema"=>"public"}
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public, public[0m
+  [4;36;1mMovie Load (1.7ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 26ms (View: 5, DB: 3) | 200 OK [http://localhost/movies?schema=public]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:22:33) [GET]
+  Parameters: {"schema"=>"martial_heroes"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO martial_heroes, public[0m
+  [4;35;1mMovie Load (1.6ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 26ms (View: 5, DB: 3) | 200 OK [http://localhost/movies?schema=martial_heroes]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:23:54) [GET]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO martial_heroes, public[0m
+  [4;36;1mMovie Load (1.6ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 45ms (View: 23, DB: 2) | 200 OK [http://localhost/movies]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:23:57) [GET]
+  Parameters: {"schema"=>"public"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public, public[0m
+  [4;35;1mMovie Load (1.7ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 39ms (View: 17, DB: 3) | 200 OK [http://localhost/movies?schema=public]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:23:59) [GET]
+  Parameters: {"schema"=>"gee"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO gee, public[0m
+  [4;36;1mMovie Load (1.7ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 37ms (View: 16, DB: 3) | 200 OK [http://localhost/movies?schema=gee]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:24:00) [GET]
+  Parameters: {"schema"=>"public"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public, public[0m
+  [4;35;1mMovie Load (1.7ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 37ms (View: 16, DB: 3) | 200 OK [http://localhost/movies?schema=public]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:24:01) [GET]
+  Parameters: {"schema"=>"martial_heroes"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO martial_heroes, public[0m
+  [4;36;1mMovie Load (1.6ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 26ms (View: 5, DB: 3) | 200 OK [http://localhost/movies?schema=martial_heroes]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:24:03) [GET]
+  Parameters: {"schema"=>"public"}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public, public[0m
+  [4;35;1mMovie Load (1.7ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 38ms (View: 16, DB: 3) | 200 OK [http://localhost/movies?schema=public]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:24:04) [GET]
+  Parameters: {"schema"=>"gee"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO gee, public[0m
+  [4;36;1mMovie Load (1.7ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 36ms (View: 15, DB: 3) | 200 OK [http://localhost/movies?schema=gee]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:24:06) [GET]
+  Parameters: {"schema"=>"public"}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public, public[0m
+  [4;35;1mMovie Load (1.7ms)[0m   [0mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 37ms (View: 15, DB: 3) | 200 OK [http://localhost/movies?schema=public]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET search_path TO public[0m
+
+
+Processing MoviesController#index (for 127.0.0.1 at 2010-01-07 09:24:07) [GET]
+  Parameters: {"schema"=>"martial_heroes"}
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO martial_heroes, public[0m
+  [4;36;1mMovie Load (1.6ms)[0m   [0;1mSELECT * FROM "movies" [0m
+Rendering template within layouts/movies
+Rendering movies/index
+Completed in 26ms (View: 5, DB: 2) | 200 OK [http://localhost/movies?schema=martial_heroes]
